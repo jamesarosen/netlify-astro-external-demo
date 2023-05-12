@@ -1,0 +1,8 @@
+# See https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
+
+/_astro/*.*.*
+  cache-control: public
+  cache-control: max-age=86400
+  cache-control: stale-while-revalidate=2592000
+  cache-control: stale-if-error=2592000
+  cache-control: immutable

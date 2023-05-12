@@ -1,0 +1,19 @@
+{
+	"name": "@confident.technology/demo-app",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "pnpm run build:astro && pnpm run build:netlify",
+		"build:astro": "astro build",
+		"build:netlify": "cp _headers dist/",
+		"preview": "astro preview",
+		"astro": "astro",
+		"tsc": "pnpm exec tsc"
+	},
+	"dependencies": {
+		"@astrojs/netlify": "^2.2.0",
+		"astro": "^2.1.7"
+	}
+}

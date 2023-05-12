@@ -1,0 +1,38 @@
+{
+	"author": {
+		"name": "Confident Technology, LLC",
+		"email": "gc@confident.technology",
+		"url": "https://confident.technology"
+	},
+	"description": "Demo for https://github.com/withastro/astro/issues/6292",
+	"devDependencies": {
+		"@confident.technology/demo-app": "workspace:*"
+	},
+	"engines": {
+		"node": ">=18 <19",
+		"pnpm": ">=7.27.0 <8"
+	},
+	"keywords": [
+		"astro",
+		"netlify",
+		"workspace"
+	],
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"name": "netlify-astro-functions-demo",
+	"packageManager": "pnpm@7.27.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamesarosen/netlify-astro-functions-demo"
+	},
+	"scripts": {
+		"build": "pnpm run --parallel build",
+		"www:dev": "pnpm run -C apps/www dev"
+	},
+	"type": "module",
+	"version": "0.0.0",
+	"workspaces": [
+		"apps/*"
+	]
+}
